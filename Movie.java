@@ -5,6 +5,7 @@ public class Movie extends ItemForSale
     public Movie()
     {
         super();
+        name = "testMovie";
         duration = 99;
     }
 

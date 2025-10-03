@@ -9,6 +9,7 @@ public class Book extends ItemForSale
     {
         super();
         publisher = "TestPub";
+        name = "testBook";
         authors.add(new Author());
     }
 
