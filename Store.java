@@ -53,7 +53,7 @@ public class Store
   {
     for (int i = 0; i < items.size(); i++)
     {
-      if (items.get(i).equals(itemName))
+      if (items.get(i).getName().equals(itemName))
       {
         profit += items.get(i).getPrice();
         items.remove(i);
@@ -67,7 +67,7 @@ public class Store
   {
     for (int i = 0; i < items.size(); i++)
     {
-      if (items.get(i).equals(itemName))
+      if (items.get(i).getName().equals(itemName))
       {
         return items.get(i).getCreator();
       }

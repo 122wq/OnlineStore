@@ -7,7 +7,7 @@ public class ItemForSale
 
     public ItemForSale()
     {
-        price = 0.0;
+        price = 10.0;
         name = "Test";
         date = "01/01/1900";
         creator = "Test";

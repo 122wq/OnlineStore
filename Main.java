@@ -10,6 +10,8 @@ public class Main
         s.addItem(b);
         s.showItems();
         System.out.println(b.getBirDates());
+        System.out.println(s.sellItem("Test"));
+        s.showItems();
         System.out.println(b instanceof ItemForSale);
      }
 }
