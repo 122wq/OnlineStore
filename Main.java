@@ -7,6 +7,9 @@ public class Main
      {
         Store s = new Store();
         Book b = new Book();
+        s.addItem(b);
+        s.showItems();
+        System.out.println(b.getBirDates());
         System.out.println(b instanceof ItemForSale);
      }
 }

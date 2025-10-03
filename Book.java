@@ -9,12 +9,14 @@ public class Book extends ItemForSale
     {
         super();
         publisher = "TestPub";
+        authors.add(new Author());
     }
 
-    public Book (double p, String n, String d, String c, String pu)
+    public Book (double p, String n, String d, String c, String pu, Author name)
     {
         super(p,n,d,c);
         publisher = pu;
+        authors.add(name);
     }
 
     public void addAuthor(Author au)
@@ -22,7 +24,7 @@ public class Book extends ItemForSale
         authors.add(au);
     }
 
-    public String getNames()
+    public String getAuthNames()
     {
         String allNames = "";
         for (int i = 0; i < authors.size(); i++)
@@ -32,7 +34,7 @@ public class Book extends ItemForSale
         return allNames;
     }
 
-    public String getDates()
+    public String getBirDates()
     {
         String allNames = "";
         for (int i = 0; i < authors.size(); i++)

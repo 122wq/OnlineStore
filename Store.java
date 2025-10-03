@@ -21,7 +21,57 @@
 
     Where these variables are stored and how to name them is up to you!
 */
+
+import java.util.ArrayList;
+
 public class Store
 {
+  double profit;
+  ArrayList<ItemForSale> items = new ArrayList<ItemForSale>();
 
+  public Store()
+  {
+    profit = 0.0;
+  }
+
+  public void showItems()
+  {
+    String allNames = "";
+    for (int i = 0; i < items.size(); i++)
+    {
+      allNames += items.get(i).getName() + " ";
+    }
+    System.out.println(allNames);
+  }
+
+  public void addItem(ItemForSale au)
+  {
+    items.add(au);
+  }
+
+  public double sellItem(String itemName)
+  {
+    for (int i = 0; i < items.size(); i++)
+    {
+      if (items.get(i).equals(itemName))
+      {
+        profit += items.get(i).getPrice();
+        items.remove(i);
+        i--;
+      }
+    }
+    return profit;
+  }
+
+  public String creator(String itemName)
+  {
+    for (int i = 0; i < items.size(); i++)
+    {
+      if (items.get(i).equals(itemName))
+      {
+        return items.get(i).getCreator();
+      }
+    }
+    return "Item does not exist";
+  }
 }
