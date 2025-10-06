@@ -45,6 +45,11 @@ public class Book extends ItemForSale
         return allNames;
     }
 
+    public void setPublisher(String publisher)
+    {
+        this.publisher = publisher;
+    }
+
     public String getPublisher()
     {
         return publisher;

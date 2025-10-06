@@ -10,7 +10,7 @@ public class ItemForSale
         price = 10.0;
         name = "Test";
         date = "01/01/1900";
-        creator = "Test";
+        creator = "TestCreator";
     }
     public ItemForSale(double p, String n, String d, String c)
     {
@@ -18,6 +18,23 @@ public class ItemForSale
         name = n;
         date = d;
         creator = c;
+    }
+
+    public void setName(String name)
+    {
+        this.name = name;
+    }
+    public void setPrice(double price)
+    {
+        this.price = price;
+    }
+    public void setDate(String date)
+    {
+        this.date = date;
+    }
+    public void setCreator(String creator)
+    {
+        this.creator = creator;
     }
 
     public double getPrice()
