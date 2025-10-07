@@ -1,3 +1,6 @@
+//Created by Jack Wang
+//10/6/2025
+//Items for sale class with name, price, date, creator
 public class ItemForSale
 {
     protected double price;

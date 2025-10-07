@@ -1,3 +1,6 @@
+//Created by Jack Wang
+//10/6/2025
+//Author with birth date and name 
 public class Author
 {
     String name;

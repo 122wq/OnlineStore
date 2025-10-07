@@ -1,3 +1,7 @@
+//Created by Jack Wang
+//10/6/2025
+//Book with author and publisher
+
 import java.util.ArrayList;
 
 public class Book extends ItemForSale

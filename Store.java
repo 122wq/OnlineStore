@@ -21,7 +21,9 @@
 
     Where these variables are stored and how to name them is up to you!
 */
-
+//Created by Jack Wang
+//10/6/2025
+//Online store 
 import java.util.ArrayList;
 
 public class Store

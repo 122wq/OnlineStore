@@ -1,3 +1,6 @@
+//Created by Jack Wang
+//10/6/2025
+//movie with income  
 public class Movie extends ItemForSale
 {
     private int duration;
