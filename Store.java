@@ -35,7 +35,8 @@ public class Store
   {
     profit = 0.0;
   }
-
+      //precondition: none
+    //postcondition: get all item names
   public void showItems()
   {
     String allNames = "";
@@ -45,12 +46,14 @@ public class Store
     }
     System.out.println(allNames);
   }
-
+  //precondition: must be an item
+  //postcondition: add item to store
   public void addItem(ItemForSale au)
   {
     items.add(au);
   }
-
+  //precondition: must be string
+  //postcondition: remove this item from store, add price to profit
   public double sellItem(String itemName)
   {
     for (int i = 0; i < items.size(); i++)
@@ -64,7 +67,8 @@ public class Store
     }
     return profit;
   }
-
+  //precondition: must be string
+  //postcondition: get creator for an item, or return a message if it does not exist
   public String creator(String itemName)
   {
     for (int i = 0; i < items.size(); i++)

@@ -23,12 +23,14 @@ public class Book extends ItemForSale
         publisher = pu;
         authors.add(name);
     }
-
+    //precondition: must add an author
+    //postconditoin: add a new author to the book
     public void addAuthor(Author au)
     {
         authors.add(au);
     }
-
+    //precondition: none
+    //postcondition: return all author dates
     public String getAuthNames()
     {
         String allNames = "";
@@ -38,7 +40,8 @@ public class Book extends ItemForSale
         }
         return allNames;
     }
-
+    //precondition: none
+    //postcondition: return all author bithdays (if any)
     public String getBirDates()
     {
         String allNames = "";
@@ -48,7 +51,8 @@ public class Book extends ItemForSale
         }
         return allNames;
     }
-
+    //precondition: must be string
+    //postcondition: set publisher to desired name
     public void setPublisher(String publisher)
     {
         this.publisher = publisher;

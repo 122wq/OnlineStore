@@ -17,11 +17,14 @@ public class Author
         name = n;
         date = d;
     }
-    
+    //precondition: none
+    //postcondition: get date
     public String getDate()
     {
         return date;
     }
+    //precondition: none
+    //postcondition: get name
     public String getName()
     {
         return name;

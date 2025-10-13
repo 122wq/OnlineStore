@@ -17,7 +17,8 @@ public class Movie extends ItemForSale
         super(p,n,d,c);
         duration = dr;
     }
-
+    //precondition: none
+    //postcondition: get duration
     public int getDuration()
     {
         return duration;
